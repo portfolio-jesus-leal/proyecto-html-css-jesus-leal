@@ -3,43 +3,62 @@
 <!--
     Temas pendientes
     Utilizar lo de lazy load para las imagenes - dia 1
-
+    
 -->
 
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="web, developer, development, portfolio" />
     <title>Portafolio Jesús Leal</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-
     <div class="main-div">
-        <nav class="nav">
-            <div class="card">
-                El Portafolio de Jesús Leal
-            </div>
-            <div>
-                <ul class="menu nav_ul">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./portfolio.html">Portafolio</a></li>
-                    <li><a href="./contact.html">Contacta</a></li>
-                </ul>
 
+        <header>
+        <nav class="nav bg-img">
+
+            <div class="nav-left">
+                <p class="cool-border"><strong>El Portafolio de Jesús</strong></p>
             </div>
-            <div class="btn-group">
-                <button class="button">Button</button>
-                <button class="button">Button</button>
-                <button class="button">Button</button>
-                <button class="button">Button</button>
+
+            <div class="">
+                <ul class="nav-right">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/portfolio.html">Portafolio</a></li>
+                    <li><a href="./pages/contact.html">Contacta</a></li>
+                </ul>
             </div>
+            
         </nav>
 
-        <header class="header">Header</header>
+        <nav class="nav2">
 
+            <div class="nav-left">
+                <p class="cool-border"><strong>El Portafolio de Jesús</strong></p>
+            </div>
+
+            <div class="">
+                <ul class="menu nav_ul">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/portfolio.html">Portafolio</a></li>
+                    <li><a href="./pages/contact.html">Contacta</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+    
+    <ul class="menu nav_ul">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./pages/portfolio.html">Portafolio</a></li>
+        <li><a href="./pages/contact.html">Contacta</a></li>
+    </ul>
         <main class="main">
             main
             <article class="article">
@@ -47,24 +66,43 @@
                 <section class="section">
                     section
                     <div class="card">
-                        !Hola! Soy Jesús y quiero ser programador Full Stack
-                        Durante más de 15 años he vivido en el lado oscuro programando en #COBOL, pero he visto la luz y
-                        he
-                        decidio pasarme
-                        al mundo de color y movimiento.
+                        <div class="card card-centered">
+                            <p>!Hola! Soy Jesús y quiero ser programador web Full Stack...</p>
+                        </div>
+                        <div class="card">
+                            <img class="img avatar" src="./images/perfil1.png" alt="Jesús">
+                        </div>
                     </div>
+
                     <div class="card">
-                        <img class="img avatar" src="./images/perfil1.png" alt="Jesús">
+                        <div class="card">
+                            <img class="img" src="./images/cobol2.jpg" alt="Cobol">
+                        </div>
+                        <div class="card card-centered">
+                            <p>Durante más de 15 años he vivido en el lado oscuro programando en #COBOL...</p>
+                            </p>
+                        </div>
                     </div>
+
                     <div class="card">
-                        Tengo el placer de presentarles parte de mi portafolio:
+                        <div class="card card-text-centered">
+                            <p>pero he visto la luz y he decidido embarcarme en un viaje al mundo de color y movimiento.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <img class="img" src="./images/social-media.jpg" alt="Social Media">
+                        </div>
+                    </div>
+
+                    <div class="card card-ib">
+                        <p>Tengo el placer de presentarles parte de mi portafolio:</p>
                         <div class="project">
                             <h2>Proyecto 1</h2>
                             <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
                                 veritatis ullam ut optio, et mollitia necessitatibus voluptates earum amet ea
                                 perferendis cumque qui eveniet, modi expedita eos aspernatur assumenda voluptas.</div>
                             <div class="card">
-                                <img class="img" src="./images/website-1624028_1280.png" alt="Proyecto 1">
+                                <img class="img-port" src="./images/website-1624028_1280.png" alt="Proyecto 1">
                             </div>
                         </div>
                         <div class="project">
@@ -73,7 +111,7 @@
                                 veritatis ullam ut optio, et mollitia necessitatibus voluptates earum amet ea
                                 perferendis cumque qui eveniet, modi expedita eos aspernatur assumenda voluptas.</div>
                             <div class="card">
-                                <img class="img" src="./images/website-1624028_1280.png" alt="Proyecto 1">
+                                <img class="img-port" src="./images/website-1624028_1280.png" alt="Proyecto 1">
                             </div>
                         </div>
                         <div class="project">
@@ -82,7 +120,7 @@
                                 veritatis ullam ut optio, et mollitia necessitatibus voluptates earum amet ea
                                 perferendis cumque qui eveniet, modi expedita eos aspernatur assumenda voluptas.</div>
                             <div class="card">
-                                <img class="img" src="./images/website-1624028_1280.png" alt="Proyecto 1">
+                                <img class="img-port" src="./images/website-1624028_1280.png" alt="Proyecto 1">
                             </div>
                         </div>
                         <div class="project">
@@ -91,7 +129,7 @@
                                 veritatis ullam ut optio, et mollitia necessitatibus voluptates earum amet ea
                                 perferendis cumque qui eveniet, modi expedita eos aspernatur assumenda voluptas.</div>
                             <div class="card">
-                                <img class="img" src="./images/website-1624028_1280.png" alt="Proyecto 1">
+                                <img class="img-port" src="./images/website-1624028_1280.png" alt="Proyecto 1">
                             </div>
                         </div>
                         <div class="project">
@@ -100,25 +138,17 @@
                                 veritatis ullam ut optio, et mollitia necessitatibus voluptates earum amet ea
                                 perferendis cumque qui eveniet, modi expedita eos aspernatur assumenda voluptas.</div>
                             <div class="card">
-                                <img class="img" src="./images/website-1624028_1280.png" alt="Proyecto 1">
+                                <img class="img-port" src="./images/website-1624028_1280.png" alt="Proyecto 1">
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        Actualmente estoy realizando el Bootcamp Full Stack Developer en Upgrade Hub.
-                        Saber más:
-                        <a href="http://upgrade-hub.com" target="_blank">Ir a Upgrade</a>
-                    </div>
 
-                    <div class="tag-group">
-                        <span class="tag">Noticias</span>
-                        <span class="tag">Deposrtes</span>
-                        <span class="tag">España</span>
-                        <span class="tag">Horóscopo</span>
-                    </div>
-
-                    <div class="card">
-                        <button>Ir arriba</button>
+                    <div class="card card-ib">
+                        <p>Actualmente estoy realizando el Bootcamp Full Stack Developer en Upgrade Hub.
+                            Saber más:</p>
+                        <a href="http://upgrade-hub.com" title="Upgrade Hub" target="_blank">
+                            <img class="img" src="./images/upgradehub.svg" alt="Upgrade Hub" />
+                        </a>
                     </div>
 
                 </section>
@@ -126,19 +156,67 @@
 
         </main>
 
-        <footer class="footer">
-            <h3>Sigueme en redes sociales</h3>
-            <span class="logo"><img class="logo-img"
-                    src="https://accutrainee.com/wp-content/uploads/2017/03/images-linkedin-logo-png-14.png"
-                    alt="LinkedIn">
-            </span>
-            <span class="logo">
-                <img src="http://www.amjazzy.it/wp-content/uploads/2017/08/facebook-logo-png-9.png" alt="Facebook"
-                    class="logo-img">
-            </span>
-            <span class="logo">logo3</span>
-        </footer>
     </div>
+
+    <footer class="footer bg-img">
+
+        <div class="card-70">
+
+            <div class="card">
+                <h3 class="margin-auto">Sigueme en redes sociales:</h3>
+            </div>
+
+            <div class="card-centered">
+                <span class="logo">
+                    <a href="https://www.linkedin.com/in/jesusleal/" title="LinkedIn" target="_blank">
+                        <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                            alt="LinkedIn" />
+                    </a>
+                </span>
+                <span class="logo">
+                    <a href="https://www.instagram.com/lealp22/" title="Instagram" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"
+                            class="logo-img" />
+                    </a>
+                </span>
+                <span class="logo">
+                    <a href="https://github.com/lealp22" title="Github" target="_blank">
+                        <img src="./images/github.svg" alt="Github" class="logo-img" />
+                    </a>
+                </span>
+                <span class="logo">
+                    <a href="https://www.codewars.com/users/Jesman22" title="Codewars" target="_blank">
+                        <img src="https://www.codewars.com/assets/logos/logo-61192cf7c75904d495e7ad69695fbf0bffd965bc3e17ac60f6c6b475304db09d.svg"
+                            alt="Codewars" class="logo-img" />
+                    </a>
+                </span>
+            </div>
+
+            <div class="card-flex-center">
+                <img src="https://www.svgrepo.com/show/234962/email-mail.svg" alt="Email" class="logo logo-img" />
+                <span>lealp22@gmail.com</span>
+            </div>
+
+        </div>
+        <div class="card card-30">
+
+            <div class="footer-links">
+                <a class="footer-link" href="./index.html">Inicio</a>
+                <a class="footer-link" href="./pages/portfolio.html">Portafolio</a>
+                <a class="footer-link" href="./pages/contact.html">Contacto</a>
+            </div>
+
+            <div class="card-flex-center">
+                <a href="./index.html">
+                    <img class="arrow floating" src="https://www.svgrepo.com/show/125555/up-arrow.svg" alt="Arriba">
+                </a>
+            </div>
+
+        </div>
+
+
+    </footer>
+
 </body>
 
 </html>
