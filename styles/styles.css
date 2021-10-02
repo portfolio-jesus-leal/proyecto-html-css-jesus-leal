@@ -257,11 +257,10 @@ div {
 }
 
 .img-port {
-  width: 100%;
-  /* border-radius: 1.25rem; */
+  max-width: 100%;
   border: 1px solid black;
   margin: auto;
-  /* transition-duration: 0.4s; */
+  transition-duration: 0.4s;
 }
 
 .avatar {
@@ -275,17 +274,13 @@ div {
 }
 
 .img:hover {
-  cursor: no-drop;
+  /* cursor: no-drop; */
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.5s;
 
   /* When the animation is finished, start again */
   animation-iteration-count: infinite;
 }
-
-/* .img-port:hover {
-  transform: translate(-20%, 0%);
-} */
 
 @keyframes shake {
   0% {
@@ -426,6 +421,10 @@ div {
   justify-content: center;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 .w-70 {
   width: 70%;
 }
@@ -440,6 +439,7 @@ div {
 
 .card-flex-center {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -448,10 +448,29 @@ div {
   margin: auto;
 }
 
-.project {
-  border: 2px solid #fabafa;
-  border-radius: 0.5rem;
+.project-card {
+  background-color: white;
+  border: 0.2rem solid black;
+  border-radius: 1rem;
   display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.animat-transl-right-25 {
+  transition-duration: 0.4s;
+}
+
+.animat-transl-left-25 {
+  transition-duration: 0.4s;
+}
+
+.animat-transl-right-25:hover {
+  transform: translate(25%, 0%);
+}
+
+.animat-transl-left-25:hover {
+  transform: translate(-25%, 0%);
 }
 
 .card-ib {
@@ -479,11 +498,11 @@ div {
 
 .img-link {
   border-radius: 1.5rem;
-    padding: 0.1rem 1rem;
-    width: fit-content;
-    border: 0.2rem solid black;
-    margin: 1rem;
-    background-color: white;
+  padding: 0.1rem 1rem;
+  width: fit-content;
+  border: 0.2rem solid black;
+  margin: 1rem;
+  background-color: white;
 }
 
 .tag {
@@ -634,4 +653,3 @@ div {
   padding-bottom: 0.5rem;
   border-bottom: 0.3rem solid black;
 }
-
