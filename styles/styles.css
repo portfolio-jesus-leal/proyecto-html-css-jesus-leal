@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Work+Sans:wght@400;600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Work+Sans:wght@400;600&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Raleway&display=swap');
 
 .main-div {
   width: 95%;
@@ -6,11 +7,13 @@
 }
 
 html {
-  font-family: "Chelsea Market", cursive;
+  /* font-family: "Chelsea Market", cursive; */
+  font-family: 'Luckiest Guy', cursive;
 }
 
 .text {
-  font-family: "Work Sans", sans-serif;
+  /* font-family: "Work Sans", sans-serif; */
+  font-family: 'Raleway', sans-serif;
 }
 
 @keyframes mymove {
