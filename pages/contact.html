@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="main-div">
+    <div class="main-div main-font">
 
         <!-- HEADER BEGIN -->
         <header>
@@ -30,7 +30,7 @@
                     <ul class="menu nav_ul">
                         <li><a href="/index.html">Inicio</a></li>
                         <li><a href="/pages/portfolio.html">Portafolio</a></li>
-                        <li><a href="/pages/contact.html">Contacta</a></li>
+                        <li><a href="/pages/contact.html">Contacto</a></li>
                     </ul>
                 </div>
 
@@ -40,23 +40,67 @@
 
         <!-- MAIN BEGIN -->
         <main class="main">
-            main
             <article class="article">
-                article
                 <section class="section">
-                    
                     <div class="container">
 
-                    <div class="card-flex-center card-line">
-                        <img src="https://www.svgrepo.com/show/234962/email-mail.svg" alt="Email" class="logo logo-img" />
-                        <span>lealp22@gmail.com</span>
+                        <div class="card card-line w-70 margin-auto">
+
+                            <form class="form__layout" action="/index.html" method="GET">
+
+                                <fieldset>
+                                    <legend>
+                                        <h3>Formulario de contacto</h3>
+                                    </legend>
+
+                                    <label for="name" class="text form-label">Nombre*</label>
+                                    <input required type="text" name="name" pattern="[A-Za-z0-9]{4,50}"
+                                        placeholder="Introduzca su nombre" class="form-field">
+
+                                    <label for="email" class="text form-label">Correo electrónico*</label>
+                                    <input required type="email" name="email" placeholder="Introduzca su email"
+                                        class="form-field">
+
+                                    <p class="text form-label">Motivo</p>
+                                    <label class="text form-text">
+                                        <input type="radio" name="reason" value="desarrollo_web" />
+                                        <span>Desarrollo web</span>
+                                    </label>
+                                    <label class="text form-text">
+                                        <input type="radio" name="reason" value="camela" />
+                                        Programación Host
+                                    </label class="text form-label">
+                                    <label class="text form-text">
+                                        <input type="radio" name="reason" value="otros" />
+                                        Otros
+                                    </label>
+
+                                    <label for="comments" class="text form-label">Asunto*</label>
+                                    <textarea required name="comments" class="form-textarea"
+                                        rows="8" class="form-field">
+                                    </textarea>
+
+                                    <label class="text form-label">
+                                        <input required type="checkbox" name="terms-conditions" />
+                                        <span><sub>He leído y acepto los <u>Términos y Condiciones</u></sub></span>
+                                    </label>
+
+                                </fieldset>
+
+                                <div class="card-flex-space-around">
+                                    <button class="btn form-btn" type="submit">Enviar</button>
+                                    <button class="btn form-btn" type="reset">Limpiar Formulario</button>
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <div class="card-flex-center w-70 margin-auto">
+                            <p>Me podéis contactar utilizando este formulario, enviando un mensaje a la dirección de email
+                                indicada más abajo o a través de mis redes sociales</p>
+                        </div>
+
                     </div>
-
-                    <div class="card">
-
-                    </div>
-
-                </div>
 
                 </section>
             </article>
@@ -69,7 +113,7 @@
             <div class="w-70">
 
                 <div class="card">
-                    <h3 class="margin-auto">Me puedes encontrar en estas redes sociales:</h3>
+                    <span class="footer__text">Me puedes encontrar en estas redes sociales:</span>
                 </div>
 
                 <div class="card-centered">
