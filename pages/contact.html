@@ -54,7 +54,7 @@
                                     </legend>
 
                                     <label for="name" class="text form-label">Nombre*</label>
-                                    <input required type="text" name="name" pattern="[A-Za-z0-9]{4,50}"
+                                    <input required type="text" name="name" pattern="[A-Za-z0-9ñÑáéíóúÁÉÍÓÚ\s]{4,50}"
                                         placeholder="Introduzca su nombre" class="form-field">
 
                                     <label for="email" class="text form-label">Correo electrónico*</label>
@@ -76,9 +76,8 @@
                                     </label>
 
                                     <label for="comments" class="text form-label">Asunto*</label>
-                                    <textarea required name="comments" class="form-textarea"
-                                        rows="8" class="form-field">
-                                    </textarea>
+                                    <textarea required name="comments" class="form-textarea" rows="8"
+                                        class="form-field"></textarea>
 
                                     <label class="text form-label">
                                         <input required type="checkbox" name="terms-conditions" />
@@ -96,7 +95,8 @@
                         </div>
 
                         <div class="card-flex-center w-70 margin-auto">
-                            <p>Me podéis contactar utilizando este formulario, enviando un mensaje a la dirección de email
+                            <p>Me podéis contactar utilizando este formulario, enviando un mensaje a la dirección de
+                                email
                                 indicada más abajo o a través de mis redes sociales</p>
                         </div>
 
