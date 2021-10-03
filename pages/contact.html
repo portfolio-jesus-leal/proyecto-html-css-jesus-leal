@@ -13,21 +13,21 @@
 </head>
 
 <body>
-    <div class="main-div main-font">
+    <div class="main__div main__font">
 
         <!-- HEADER BEGIN -->
         <header>
             <nav class="nav bg-img">
 
-                <div class="nav-left">
+                <div class="nav__left">
                     <img class="nav__logo" src="/images/minijesus.jpg" alt="Jesús">
-                    <p class="cool-border">
+                    <p class="nav__cool-border">
                     <h1 class="nav__title">El Portafolio de Jesús</h1>
                     </p>
                 </div>
 
                 <div class="">
-                    <ul class="menu nav_ul">
+                    <ul class="nav__ul">
                         <li><a href="/index.html">Inicio</a></li>
                         <li><a href="/pages/portfolio.html">Portafolio</a></li>
                         <li><a href="/pages/contact.html">Contacto</a></li>
@@ -53,33 +53,33 @@
                                         <h3>Formulario de contacto</h3>
                                     </legend>
 
-                                    <label for="name" class="text form-label">Nombre*</label>
+                                    <label for="name" class="text form__label">Nombre*</label>
                                     <input required type="text" name="name" pattern="[A-Za-z0-9ñÑáéíóúÁÉÍÓÚ\s]{4,50}"
-                                        placeholder="Introduzca su nombre" class="form-field">
+                                        placeholder="Introduzca su nombre" class="form__field">
 
-                                    <label for="email" class="text form-label">Correo electrónico*</label>
+                                    <label for="email" class="text form__label">Correo electrónico*</label>
                                     <input required type="email" name="email" placeholder="Introduzca su email"
-                                        class="form-field">
+                                        class="form__field">
 
-                                    <p class="text form-label">Motivo</p>
-                                    <label class="text form-text">
+                                    <p class="text form__label">Motivo</p>
+                                    <label class="text form__text">
                                         <input type="radio" name="reason" value="desarrollo_web" />
                                         <span>Desarrollo web</span>
                                     </label>
-                                    <label class="text form-text">
+                                    <label class="text form__text">
                                         <input type="radio" name="reason" value="camela" />
                                         Programación Host
-                                    </label class="text form-label">
-                                    <label class="text form-text">
+                                    </label class="text form__label">
+                                    <label class="text form__text">
                                         <input type="radio" name="reason" value="otros" />
                                         Otros
                                     </label>
 
-                                    <label for="comments" class="text form-label">Asunto*</label>
-                                    <textarea required name="comments" class="form-textarea" rows="8"
-                                        class="form-field"></textarea>
+                                    <label for="comments" class="text form__label">Asunto*</label>
+                                    <textarea required name="comments" class="form__textarea" rows="8"
+                                        class="form__field"></textarea>
 
-                                    <label class="text form-label">
+                                    <label class="text form__label">
                                         <input required type="checkbox" name="terms-conditions" />
                                         <span><sub>He leído y acepto los <u>Términos y Condiciones</u></sub></span>
                                     </label>
@@ -87,17 +87,16 @@
                                 </fieldset>
 
                                 <div class="card-flex-space-around">
-                                    <button class="btn form-btn" type="submit">Enviar</button>
-                                    <button class="btn form-btn" type="reset">Limpiar Formulario</button>
+                                    <button class="btn form__btn" type="submit">Enviar</button>
+                                    <button class="btn form__btn" type="reset">Limpiar Formulario</button>
                                 </div>
 
                             </form>
                         </div>
 
                         <div class="card-flex-center w-70 margin-auto">
-                            <p>Me podéis contactar utilizando este formulario, enviando un mensaje a la dirección de
-                                email
-                                indicada más abajo o a través de mis redes sociales</p>
+                            <p>Me puedes contactar utilizando este formulario, enviando un mensaje a la dirección de
+                                email indicada más abajo o a través de mis redes sociales</p>
                         </div>
 
                     </div>
@@ -117,33 +116,33 @@
                 </div>
 
                 <div class="card-centered">
-                    <span class="logo">
+                    <span class="footer__logo">
                         <a href="https://www.linkedin.com/in/jesusleal/" title="LinkedIn" target="_blank">
-                            <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                            <img class="footer__logo-img" src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
                                 alt="LinkedIn" />
                         </a>
                     </span>
-                    <span class="logo">
+                    <span class="footer__logo">
                         <a href="https://www.instagram.com/lealp22/" title="Instagram" target="_blank">
                             <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"
-                                class="logo-img" />
+                                class="footer__logo-img" />
                         </a>
                     </span>
-                    <span class="logo">
+                    <span class="footer__logo">
                         <a href="https://github.com/lealp22" title="Github" target="_blank">
-                            <img src="/images/github.svg" alt="Github" class="logo-img" />
+                            <img src="/images/github.svg" alt="Github" class="footer__logo-img" />
                         </a>
                     </span>
-                    <span class="logo">
+                    <span class="footer__logo">
                         <a href="https://www.codewars.com/users/Jesman22" title="Codewars" target="_blank">
                             <img src="https://www.codewars.com/assets/logos/logo-61192cf7c75904d495e7ad69695fbf0bffd965bc3e17ac60f6c6b475304db09d.svg"
-                                alt="Codewars" class="logo-img" />
+                                alt="Codewars" class="footer__logo-img" />
                         </a>
                     </span>
                 </div>
 
                 <div class="card-flex-center">
-                    <img src="https://www.svgrepo.com/show/234962/email-mail.svg" alt="Email" class="logo logo-img" />
+                    <img src="https://www.svgrepo.com/show/234962/email-mail.svg" alt="Email" class="footer__logo footer__logo-img" />
                     <span>lealp22@gmail.com</span>
                 </div>
 
@@ -151,15 +150,15 @@
 
             <div class="card w-30">
 
-                <div class="footer-links">
-                    <a class="footer-link" href="/index.html">Inicio</a>
-                    <a class="footer-link" href="/pages/portfolio.html">Portafolio</a>
-                    <a class="footer-link" href="/pages/contact.html">Contacto</a>
+                <div class="footer-group">
+                    <a class="footer-group__link" href="/index.html">Inicio</a>
+                    <a class="footer-group__link" href="/pages/portfolio.html">Portafolio</a>
+                    <a class="footer-group__link" href="/pages/contact.html">Contacto</a>
                 </div>
 
                 <div class="card-flex-center">
                     <a href="#">
-                        <img class="arrow floating" src="https://www.svgrepo.com/show/125555/up-arrow.svg" alt="Arriba">
+                        <img class="arrow-up floating" src="https://www.svgrepo.com/show/125555/up-arrow.svg" alt="Arriba">
                     </a>
                 </div>
             </div>
