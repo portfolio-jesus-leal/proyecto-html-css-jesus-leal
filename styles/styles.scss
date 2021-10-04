@@ -1,17 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap");
 
 // Custom Properties CSS
-// definición
+// Variables definition
 $font-main: "Bangers",
 cursive;
 $font-text: "Montserrat",
 sans-serif;
-$main-color           : #eceae4;
-$btn-color            : #4caf50;
-$btn-border-radius    : 1.5rem;
-$nav-font-color       : white;
-$gallery-overlay-color: #008cba;
-$circle-border-radius : 50%;
+$main-color                 : #eceae4;
+$btn-color                  : #4caf50;
+$btn-border-radius          : 1.5rem;
+$nav-font-color             : white;
+$gallery-overlay-color      : #008cba;
+$circle-border-radius       : 50%;
+$header-background-color    : gray;
+$footer-background-color    : gray;
+$footer-color               : white;
+// Variables for screen size control
+$mobile_breakpoint          : 576px;
+$tablet_breakpoint          : 768px;
+$tablet_landscape_breakpoint: 992px;
+$desktop_breakpoint         : 1200px;
+$desktop_xl_breakpoint      : 1600px;
 
 @mixin project-img {
     max-width          : 100%;
@@ -24,6 +33,12 @@ $circle-border-radius : 50%;
     animation                : leftright 0.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+}
+
+@mixin card {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
 }
 
 @mixin button {
@@ -40,6 +55,26 @@ $circle-border-radius : 50%;
     background-color   : $btn-color;
     box-shadow         : 0.3rem 0.3rem 0.3rem 0 #000;
     transition-duration: 0.3s;
+
+    @include mobile {
+        font-size : unset;
+        margin    : 1rem auto;
+        box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
+    }
+}
+
+// Mixin for media query
+
+@mixin mobile {
+    @media only screen and (max-width: #{$mobile_breakpoint}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: #{$tablet_breakpoint}) {
+        @content;
+    }
 }
 
 a {
@@ -50,10 +85,14 @@ a {
 .section {
     padding         : 20px;
     background-color: $main-color;
+
+    @include mobile {
+        padding: 10px;
+    }
 }
 
 .header {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: $header-background-color;
     border          : 2px solid black;
     padding         : 20px;
     margin          : 40px;
@@ -63,6 +102,10 @@ a {
     &__div {
         width : 95%;
         margin: auto;
+
+        @include tablet {
+            width: 100%;
+        }
     }
 
     &__font {
@@ -72,7 +115,7 @@ a {
 
 .nav {
     color           : $nav-font-color;
-    background-color: gray;
+    background-color: $header-background-color;
     display         : flex;
     flex-direction  : row;
     justify-content : space-around;
@@ -85,6 +128,10 @@ a {
         margin-right       : 2rem;
         transition-duration: 0.2s;
         box-shadow         : 0.3rem 0.3rem 0.3rem 0 #000;
+
+        @include mobile {
+            max-height: 3rem;
+        }
     }
 
     &__logo:hover {
@@ -92,10 +139,13 @@ a {
     }
 
     &__title {
-        text-justify       : auto;
         text-align         : center;
         transition-duration: 0.2s;
         text-shadow        : 0.3rem 0.3rem 0.3rem #000;
+
+        @include mobile {
+            font-size: 1.5rem;
+        }
     }
 
     &__title:hover {
@@ -122,6 +172,10 @@ a {
         transition-duration: 0.3s;
         margin             : 0.25rem 1.25rem 0.25rem 0.15rem;
         cursor             : pointer;
+
+        @include mobile {
+            padding: 0;
+        }
     }
 
     &__ul>li:hover {
@@ -165,6 +219,12 @@ a {
 
     &__img {
         @include project-img;
+        width: 50%;
+
+        @include mobile {
+            width : 95%;
+            margin: 0.3rem 0;
+        }
     }
 
     &__card {
@@ -174,6 +234,13 @@ a {
         display         : flex;
         flex-direction  : column;
         padding         : 1rem;
+        width           : 50%;
+
+        @include mobile {
+            padding: 0.5rem;
+            width  : 95%;
+            margin : 0.3rem 0;
+        }
     }
 
     &__table {
@@ -189,12 +256,11 @@ a {
     position        : relative;
     display         : flex;
     justify-content : center;
-    background-color: #463e3e;
-    color           : white;
     padding         : 1%;
     margin          : auto;
     background      : transparent;
-    background-color: gray;
+    background-color: $footer-background-color;
+    color           : $footer-color;
 
     &__link_group {
         display        : flex;
@@ -218,6 +284,10 @@ a {
         display  : block;
         font-size: 1.5rem;
         margin   : auto;
+
+        @include mobile {
+            font-size: unset;
+        }
     }
 
     &__logo {
@@ -243,6 +313,10 @@ a {
     padding: 0.8rem 1.6rem;
     display: inline;
 
+    @include mobile {
+        padding: 0;
+    }
+
     &:hover {
         transform: scale(115%);
     }
@@ -251,6 +325,10 @@ a {
 .btn-portfolio {
     @include button;
     padding: 0 1rem 0 2rem;
+
+    @include mobile {
+        padding: 0 0 0 0.5rem;
+    }
 
     &:hover {
         transform: scale(115%);
@@ -265,12 +343,20 @@ a {
 
 .text {
     font-family: $font-text;
+
+    @include mobile {
+        font-size: unset;
+    }
 }
 
 .title {
     display  : block;
     font-size: 2rem;
     margin   : 2rem auto;
+
+    @include mobile {
+        font-size: unset;
+    }
 }
 
 .bg-img {
@@ -310,9 +396,16 @@ a {
 }
 
 .card {
-    display        : flex;
-    flex-wrap      : wrap;
-    justify-content: center;
+    @include card;
+
+    &--medium {
+        @include card;
+        width: 50%;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
 }
 
 .card-flex-center {
@@ -320,6 +413,10 @@ a {
     flex-direction : row;
     justify-content: center;
     align-items    : center;
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .card-flex-space-around {
@@ -334,7 +431,7 @@ a {
     text-align : center;
     align-items: center;
 
-    & p {
+    p {
         margin: auto;
     }
 }
@@ -343,6 +440,10 @@ a {
     font-size : 2.5rem;
     margin    : 15%;
     text-align: center;
+
+    @include mobile {
+        font-size: unset;
+    }
 }
 
 .line-bottom {
@@ -353,7 +454,12 @@ a {
 
 .slot-space {
     margin: 2% 0;
+
+    &+.card {
+        margin: 5% 0;
+    }
 }
+
 
 .w-100 {
     width: 100%;
@@ -396,6 +502,10 @@ a {
     max-width : 50px;
     position  : sticky;
     margin-top: 10px;
+
+    @include mobile {
+        width: 0%;
+    }
 
     &:hover {
         animation                : updown 0.5s;
@@ -468,6 +578,10 @@ a {
         max-width   : 90%;
         margin-right: auto;
         margin-left : auto;
+
+        @include mobile {
+            font-size: unset;
+        }
     }
 
     &__title {
@@ -481,21 +595,34 @@ a {
         background-color: white;
         padding         : 0 2%;
         border-radius   : 5%;
+
+        @include mobile {
+            top      : 0rem;
+            left     : 0rem;
+            font-size: unset;
+        }
     }
 
     &__link {
-        color           : black;
-        position        : absolute;
-        bottom          : 0.5rem;
-        right           : 1rem;
-        font-size       : 1rem;
-        z-index         : 9;
-        transition      : 0.5s ease;
-        display         : inline-flex;
-        background-color: white;
-        padding         : 2%;
-        border-radius   : $circle-border-radius;
-        opacity         : 0.8;
+        color              : black;
+        position           : absolute;
+        bottom             : 0.5rem;
+        right              : 1rem;
+        // font-size       : 1rem;
+        z-index            : 9;
+        transition         : 0.5s ease;
+        display            : inline-flex;
+        background-color   : white;
+        padding            : 2%;
+        border-radius      : $circle-border-radius;
+        opacity            : 0.8;
+
+        @include mobile {
+            bottom   : 0rem;
+            right    : 0rem;
+            padding  : 0;
+            font-size: unset;
+        }
     }
 
     &__img {
@@ -558,6 +685,11 @@ a {
         padding-left    : 1rem;
         background-color: white;
         font-family     : $font-text;
+
+        @include mobile {
+            width : 92%;
+            height: 1.5rem;
+        }
     }
 
     &__btn {
@@ -666,24 +798,5 @@ a {
 
     to {
         transform: translate(0, -0px);
-    }
-}
-
-@keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-30px);
-    }
-
-    60% {
-        transform: translateY(-15px);
     }
 }

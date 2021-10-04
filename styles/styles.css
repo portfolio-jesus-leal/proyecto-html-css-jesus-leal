@@ -9,8 +9,14 @@ a {
   background-color: #eceae4;
 }
 
+@media only screen and (max-width: 576px) {
+  .section {
+    padding: 10px;
+  }
+}
+
 .header {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: gray;
   border: 2px solid black;
   padding: 20px;
   margin: 40px;
@@ -19,6 +25,12 @@ a {
 .main__div {
   width: 95%;
   margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .main__div {
+    width: 100%;
+  }
 }
 
 .main__font {
@@ -54,17 +66,28 @@ a {
           box-shadow: 0.3rem 0.3rem 0.3rem 0 #000;
 }
 
+@media only screen and (max-width: 576px) {
+  .nav__logo {
+    max-height: 3rem;
+  }
+}
+
 .nav__logo:hover {
   -webkit-transform: scale(120%) translate(-0.5rem, -0.25rem);
           transform: scale(120%) translate(-0.5rem, -0.25rem);
 }
 
 .nav__title {
-  text-justify: auto;
   text-align: center;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
   text-shadow: 0.3rem 0.3rem 0.3rem #000;
+}
+
+@media only screen and (max-width: 576px) {
+  .nav__title {
+    font-size: 1.5rem;
+  }
 }
 
 .nav__title:hover {
@@ -100,6 +123,12 @@ a {
           transition-duration: 0.3s;
   margin: 0.25rem 1.25rem 0.25rem 0.15rem;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  .nav__ul > li {
+    padding: 0;
+  }
 }
 
 .nav__ul > li:hover {
@@ -157,6 +186,14 @@ a {
   margin: auto;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
+  width: 50%;
+}
+
+@media only screen and (max-width: 576px) {
+  .portfolio__img {
+    width: 95%;
+    margin: 0.3rem 0;
+  }
 }
 
 .portfolio__card {
@@ -171,6 +208,15 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 1rem;
+  width: 50%;
+}
+
+@media only screen and (max-width: 576px) {
+  .portfolio__card {
+    padding: 0.5rem;
+    width: 95%;
+    margin: 0.3rem 0;
+  }
 }
 
 .portfolio__table {
@@ -189,12 +235,11 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #463e3e;
-  color: white;
   padding: 1%;
   margin: auto;
   background: transparent;
   background-color: gray;
+  color: white;
 }
 
 .footer__link_group {
@@ -229,6 +274,12 @@ a {
   display: block;
   font-size: 1.5rem;
   margin: auto;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer__text {
+    font-size: unset;
+  }
 }
 
 .footer__logo {
@@ -280,6 +331,21 @@ a {
   display: inline;
 }
 
+@media only screen and (max-width: 576px) {
+  .btn {
+    font-size: unset;
+    margin: 1rem auto;
+    -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
+            box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .btn {
+    padding: 0;
+  }
+}
+
 .btn:hover {
   -webkit-transform: scale(115%);
           transform: scale(115%);
@@ -315,6 +381,21 @@ a {
   padding: 0 1rem 0 2rem;
 }
 
+@media only screen and (max-width: 576px) {
+  .btn-portfolio {
+    font-size: unset;
+    margin: 1rem auto;
+    -webkit-box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
+            box-shadow: 0.1rem 0.1rem 0.1rem 0 #000;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .btn-portfolio {
+    padding: 0 0 0 0.5rem;
+  }
+}
+
 .btn-portfolio:hover {
   -webkit-transform: scale(115%);
           transform: scale(115%);
@@ -333,10 +414,22 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
+@media only screen and (max-width: 576px) {
+  .text {
+    font-size: unset;
+  }
+}
+
 .title {
   display: block;
   font-size: 2rem;
   margin: 2rem auto;
+}
+
+@media only screen and (max-width: 576px) {
+  .title {
+    font-size: unset;
+  }
 }
 
 .bg-img {
@@ -398,6 +491,24 @@ a {
           justify-content: center;
 }
 
+.card--medium {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+@media only screen and (max-width: 576px) {
+  .card--medium {
+    width: 100%;
+  }
+}
+
 .card-flex-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -412,6 +523,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .card-flex-center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .card-flex-space-around {
@@ -448,6 +568,12 @@ a {
   text-align: center;
 }
 
+@media only screen and (max-width: 576px) {
+  .card-text {
+    font-size: unset;
+  }
+}
+
 .line-bottom {
   margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
@@ -456,6 +582,10 @@ a {
 
 .slot-space {
   margin: 2% 0;
+}
+
+.slot-space + .card {
+  margin: 5% 0;
 }
 
 .w-100 {
@@ -504,6 +634,12 @@ a {
   position: -webkit-sticky;
   position: sticky;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+  .arrow-up {
+    width: 0%;
+  }
 }
 
 .arrow-up:hover {
@@ -603,6 +739,12 @@ a {
   margin-left: auto;
 }
 
+@media only screen and (max-width: 576px) {
+  .gallery__text {
+    font-size: unset;
+  }
+}
+
 .gallery__title {
   color: black;
   position: absolute;
@@ -617,12 +759,19 @@ a {
   border-radius: 5%;
 }
 
+@media only screen and (max-width: 576px) {
+  .gallery__title {
+    top: 0rem;
+    left: 0rem;
+    font-size: unset;
+  }
+}
+
 .gallery__link {
   color: black;
   position: absolute;
   bottom: 0.5rem;
   right: 1rem;
-  font-size: 1rem;
   z-index: 9;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -633,6 +782,15 @@ a {
   padding: 2%;
   border-radius: 50%;
   opacity: 0.8;
+}
+
+@media only screen and (max-width: 576px) {
+  .gallery__link {
+    bottom: 0rem;
+    right: 0rem;
+    padding: 0;
+    font-size: unset;
+  }
 }
 
 .gallery__img {
@@ -699,6 +857,13 @@ a {
   padding-left: 1rem;
   background-color: white;
   font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 576px) {
+  .form__field {
+    width: 92%;
+    height: 1.5rem;
+  }
 }
 
 .form__btn {
@@ -918,44 +1083,6 @@ a {
   to {
     -webkit-transform: translate(0, 0px);
             transform: translate(0, 0px);
-  }
-}
-
-@-webkit-keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-  60% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
-  }
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-  60% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
   }
 }
 /*# sourceMappingURL=styles.css.map */
