@@ -7,10 +7,10 @@ Página Web creada utilizando HTML5 y SCSS (CSS) como proyecto del primer módul
 La idea es crear una web donde se presenta el portafolio de trabajados realizados como desarrollador.
 
 * Visitar la web, disponible en:
-[https://jesusleal.w3spaces.com/](https://jesusleal.w3spaces.com/)
+[https://jesusleal.netlify.app/](https://jesusleal.netlify.app/)
 
 * Todo el código fuente está disponible en el repositorio:
-[https://gitlab.com/jleal22/proyecto-html-css-jesus-leal](https://gitlab.com/jleal22/proyecto-html-css-jesus-leal)
+[https://github.com/portfolio-jesus-leal/proyecto-html-css-jesus-leal](https://github.com/portfolio-jesus-leal/proyecto-html-css-jesus-leal)
 
 ![View web](./images/captura.jpg)
 ...
